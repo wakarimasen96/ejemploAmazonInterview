@@ -17,21 +17,30 @@ public class FirstNonRepeatCharacter {
 
 
             for (i = 0; i < characters.size()-1; i++) {
-                if (characters.get(i).equals(characters.get(i + 1))) {
-                    i++;
-                }else{
-                    first = characters.get(i);
-                    break;
-            }
+
+                while (i==0) {
+                    if (characters.get(i).equals(characters.get(i + 1))) {
+                        i++;
+                    } else {
+                        first = characters.get(i);
+                        break;
+                    }
+                }
                 if (characters.get(i).equals(characters.get(i + 1))) {
                     i++;
                 } else {
-                    if (characters.get(i + 1).equals(characters.get(i + 2))) {
-                        i++;
-                    } else {
-                        first = characters.get(i + 1);
+                    if ((i+2)>characters.size()-1){
+                        first = characters.get(i+1);
                         break;
+                    }else{
+                        if (characters.get(i + 1).equals(characters.get(i + 2))) {
+                            i++;
+                        } else {
+                            first = characters.get(i + 1);
+                            break;
+                        }
                     }
+
 
                 }
 
