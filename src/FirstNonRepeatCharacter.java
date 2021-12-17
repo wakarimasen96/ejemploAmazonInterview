@@ -43,6 +43,9 @@ public class FirstNonRepeatCharacter {
 
 
                 }
+                if(i>= characters.size()-1){
+                    first = "theres no first non repeat character";
+                }
 
             }
 

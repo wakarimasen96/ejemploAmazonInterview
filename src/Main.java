@@ -8,9 +8,9 @@ public class Main {
 
     characters.add("a");
     characters.add("a");
-    characters.add("c");
     characters.add("a");
-    characters.add("d");
+    characters.add("a");
+    characters.add("a");
 
 
 
